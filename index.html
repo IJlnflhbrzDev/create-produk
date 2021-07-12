@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>UI Create Produk</title>
+  </head>
+
+  <body>
+
+    <section>
+      <div class="container mt-5">
+        <!--CARD DROP FILE PRODUK -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Uplod Produk
+              <div class="alert alert-light d-inline" style="font-size: 13px;" role="alert">Wajib
+              </div>
+            </h5>
+
+            <p class="card-text text-muted">Format gambar .jpg
+              .jpeg .png dan ukuran minimum 300 x
+              300px (Untuk
+              gambar optimal gunakan ukuran minimum 700 x
+              700 px).
+              <br>
+              <br>
+              Silahkan Iput Foto Disini
+            </p>
+
+            <input type="file" name="file" id="file">
+
+          </div>
+
+        </div>
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Informasi Produk</h5>
+            <!-- NAMA PRODUK -->
+            <div class="row align-items-center nama_produk">
+              <div class="col-lg-4">
+                <div class="card-title">
+                  <h6 class="card-subtitle mb-2
+                    mt-4">
+                    Nama Produk
+                    <div class="alert alert-light
+                      d-inline" style="font-size: 13px;" role="alert">
+                      Wajib
+                  </h6>
+                  <p class="card-text w-75">Nama
+                    min. 5 kata, terdiri dari
+                    jenis produk, merek, dan
+                    keterangan seperti warna,
+                    bahan, atau tipe.</p>
+                </div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="card-input w-100">
+                  <input type="text" class="form-control" placeholder="Contoh:
+                      Sepatu Pria
+                      (Jenis/Kategori Produk) +
+                      Tokostore (Merek) +
+                      Kanvas Hitam
+                      (Keterangan)">
+                </div>
+
+              </div>
+            </div>
+            <!-- KATEGORI -->
+            <div class="row align-items-center Kategori
+                mt-3">
+              <div class="col-lg-4">
+                <div class="card-title">
+                  <h6 class="card-subtitle
+                      mb-2">
+                    Kategori
+                    <div class="alert
+                        alert-light
+                        d-inline" style="font-size:
+                        13px;" role="alert">
+                      Wajib
+                  </h6>
+                </div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="card-select
+                      w-100">
+                  <div class="input-group
+                        mb-3">
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- SPESIFIKASI -->
+
+            <div class="row align-items-center
+                  spesifikasi mt-5">
+              <div class="col-lg-4">
+                <div class="card-title">
+                  <h6 class="card-subtitle
+                        mb-2">
+                    Spesifikasi
+                    <div class="alert
+                          alert-light
+                          d-inline" style="font-size:
+                          13px;" role="alert">
+                      Wajib
+                  </h6>
+                  <p class="card-text
+                          w-75">Tambah
+                    keterangan
+                    secara rinci
+                    supaya produkmu
+                    makin mudah
+                    dikenali
+                    pembeli</p>
+                </div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="card-input
+                        w-100">
+                  <label>Merek</label>
+                  <div class="input-group
+                          mb-3">
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- DETAIL PRODUK -->
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Detail Produk</h5>
+            <div class="row align-items-end">
+              <div class="col-lg-4 mt-4">
+                <h6>Deskripsi Produk</h6>
+                <p class="card-text">Pastikan deskripsi produk memuat
+                  spesifikasi, ukuran,
+                  bahan, masa berlaku, dan lainnya. Semakin detail,
+                  semakin berguna
+                  bagi pembeli. </p>
+              </div>
+              <div class="col-lg-8">
+                <div class="input-group">
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- VARIAN PRODUK -->
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="row align-items-end">
+              <div class="col-lg-9 mt-4">
+                <h5>Varian Produk</h5>
+                <p>Tambahkan varian seperti warna, ukuran, atau lainnya.
+                  Pilih maksimum 2 tipe varian.</p>
+              </div>
+              <div class="col-lg-3">
+                <button type="button" class="btn btn-outline-success
+                        w-100" id="tambahVariant">+
+                  Tambah</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SAMPLE SELECT 2  -->
+        <div class="container-variant">
+        </div>
+        <div class="select-tabel-varian"></div>
+
+        <!-- sample selec tabel varian -->
+
+
+
+        <!--BERAT PRODUK-->
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="row align-items-end">
+              <div class="col-lg-4 mt-4">
+                <div class="card-title">
+                  <h6 class="card-subtitlemb-2">Berat Produk
+                    <div class="alert alert-light d-inline" style="font-size: 13px;" role="alert">Wajib</div>
+                  </h6>
+                  <p class="card-text w-75">Masukkan berat dengan menimbang produk setelah dikemas.</p>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="input-group">
+                  <input type="text" name="berat_produk" class="form-control"></input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--UKURAN PRODUK  -->
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-4 mt-4">
+                <div class="card-title">
+                  <h6 class="card-subtitlemb-2">Ukuran Produk</h6>
+                  <p class="card-text w-75">Masukkan ukuran produk setelah dikemas untuk menghitung berat volume
+                    <a href="#" class=" text-success font-weight-bold">Pelajari Berat Volume</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="uk_produk d-flex  align-items-center">
+                  <div class="input-group mr-2">
+                    <input type="text" class="form-control"
+                      aria-label="Dollar amount (with dot and two decimal places)">
+                    <div class="input-group-append">
+                      <span class="input-group-text">cm</span>
+                    </div>
+                  </div>
+                  <!-- 1 -->
+                  <div class="input-group mr-2">
+                    <input type="text" class="form-control"
+                      aria-label="Dollar amount (with dot and two decimal places)">
+                    <div class="input-group-append">
+                      <span class="input-group-text">cm</span>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="input-group">
+                    <input type="text" class="form-control"
+                      aria-label="Dollar amount (with dot and two decimal places)">
+                    <div class="input-group-append">
+                      <span class="input-group-text">cm</span>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!-- END CONTAINER -->
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+
+    <!-- JQUERY SELECT 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      let indexVariant = 0;
+      let valueWarna = [];
+      let valueUkuran = [];
+      let HeighData = "";
+
+
+      function selectedWarna(tagSelect) {
+        let value = tagSelect.value;
+        valueWarna.push(value);
+
+        DrawRowData();
+      }
+
+      function selectedUkuran(tagSelect) {
+        let value = tagSelect.value;
+        valueUkuran.push(value);
+
+        DrawRowData();
+      }
+
+      function drawSelectWarna() {
+        let html = `<select class="form-control select-variant w-100" onchange="selectedWarna(this)" id="selectWarna" multiple>
+                         <option value="warna 1">warna 1</option>
+                         <option value="warna 2">warna 2</option>
+                         <option value="warna 3">warna 3</option>
+                    </select>`;
+        document.getElementById("templateSelectWarna").innerHTML = html;
+      }
+
+      function drawSelectUkuran() {
+        let html = `<select class="form-control select-variant w-100" id="selectUkuran" onchange="selectedUkuran(this)" multiple>
+                         <option>ukuran 1</option>
+                         <option>ukuran 2</option>
+                         <option>ukuran 3</option>
+                    </select>`;
+        document.getElementById("templateSelectUkuran").innerHTML = html;
+      }
+
+      function DrawVariantWarnaDanUkuran() {
+        let html = `<div class="card mt-2">
+                              <div class="card-body">
+                                   <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                             <div class="input-group w-50">
+                                                <h6 class="card-title">Varian Warna</h6>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-8" id="templateSelectWarna">
+
+                                        </div>
+                                   </div>
+                                   <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                             <div class="input-group w-50">
+                                                <h6 class="card-title">Varian Ukuran</h6>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-8" id="templateSelectUkuran">
+
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>`;
+        document.querySelector(".container-variant").innerHTML = html;
+        drawSelectWarna();
+        drawSelectUkuran();
+        $(".select-variant").select2({
+          placeholder: `Silahkan Pilih Varian`,
+        });
+      }
+
+      function DrawTabelVarian() {
+        return `
+                      <div class="container mt-4 border-top">
+                         <h6 class="mt-4">Tabel Varian</h6>
+
+                         <div class="table_variant">
+                              <table class="table table-bordered">
+                                   <thead>
+                                        <tr>
+
+                                             <th scope="col">Warna</th>
+                                             <th scope="col">Ukuran</th>
+                                             <th scope="col">Harga Jual</th>
+                                             <th scope="col">Harga Beli</th>
+                                             <th scope="col">Warehouse</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody id="rowDataTable">
+
+                                   </tbody>
+                              </table>
+                         </div>
+                    </div>
+
+
+                    `
+      }
+
+      function DrawRowData() {
+        let lengthWarna = valueWarna.length;
+        if (lengthWarna == 0) {
+          lengthWarna = 1;
+        }
+        let lengthUkuran = valueUkuran.length;
+        if (lengthUkuran == 0) {
+          lengthUkuran = 1;
+        }
+        let HeighData = lengthWarna * lengthUkuran;
+        let html = "";
+        for (let i = 0; i < HeighData; i++) {
+          let warna = "";
+          if (valueWarna[i]) {
+            warna = valueWarna[i]
+          }
+          let ukuran = "";
+          if (valueUkuran[i]) {
+            ukuran = valueUkuran[i];
+          }
+          html += `<tr>`;
+          html += `<td>`;
+          html += `<input class="form-control" name="" value="${warna}">`;
+          html += `</td>`;
+          html += `<td>`;
+          html += `<input class="form-control" name="" value="${ukuran}">`;
+          html += `</td>`;
+          html += `<td>`;
+          html += `<input class="form-control" name="">`;
+          html += `</td>`;
+          html += `<td>`;
+          html += `<input class="form-control" name="">`;
+          html += `</td>`;
+          html += `<td>`;
+          html += `<input class="form-control" name="">`;
+          html += `</td>`;
+          html += `</tr>`;
+        }
+
+        document.getElementById("rowDataTable").innerHTML = html;
+      }
+
+      $(document).ready(function () {
+        $("#tambahVariant").click(function (e) {
+          DrawVariantWarnaDanUkuran();
+          $('.select-tabel-varian').append(DrawTabelVarian())
+
+        })
+      })
+
+    </script>
+  </body>
+
+</html>
