@@ -292,16 +292,16 @@
 
 
       function selectedWarna(tagSelect) {
-        let value = tagSelect.value;
-        valueWarna.push(value);
+        let value = $("#selectWarna").val();
+        valueWarna = value;
 
         DrawRowData();
       }
 
       function selectedUkuran(tagSelect) {
-        let value = tagSelect.value;
-        valueUkuran.push(value);
-
+        let value = $("#selectUkuran").val();
+        valueUkuran = value;
+        console.log(value);
         DrawRowData();
       }
 
@@ -386,6 +386,7 @@
       }
 
       function DrawRowData() {
+        // console.log(valueWarna);
         let lengthWarna = valueWarna.length;
         if (lengthWarna == 0) {
           lengthWarna = 1;
@@ -395,22 +396,15 @@
           lengthUkuran = 1;
         }
         let HeighData = lengthWarna * lengthUkuran;
+        // console.log(HeighData);
         let html = "";
         for (let i = 0; i < HeighData; i++) {
-          let warna = "";
-          if (valueWarna[i]) {
-            warna = valueWarna[i]
-          }
-          let ukuran = "";
-          if (valueUkuran[i]) {
-            ukuran = valueUkuran[i];
-          }
           html += `<tr>`;
           html += `<td>`;
-          html += `<input class="form-control" name="" value="${warna}">`;
+          html += `<input class="form-control input-warna" name="">`;
           html += `</td>`;
           html += `<td>`;
-          html += `<input class="form-control" name="" value="${ukuran}">`;
+          html += `<input class="form-control input-ukuran" name="">`;
           html += `</td>`;
           html += `<td>`;
           html += `<input class="form-control" name="">`;
@@ -425,6 +419,32 @@
         }
 
         document.getElementById("rowDataTable").innerHTML = html;
+        if (valueWarna.length > 0) {
+          let listInputWarna = document.querySelectorAll(".input-warna");
+          let panjangWarna = valueWarna.length;
+          let indexLoop = 0;
+
+          for (let i = 0; i < HeighData; i++) {
+            if (indexLoop >= panjangWarna) {
+              indexLoop = 0;
+            }
+            listInputWarna[i].value = valueWarna[indexLoop];
+            indexLoop++;
+          }
+        }
+        if (valueUkuran.length > 0) {
+          let listInputUkuran = document.querySelectorAll(".input-ukuran");
+          let panjangUkuran = valueUkuran.length;
+          let indexLoop = 0;
+
+          for (let i = 0; i < HeighData; i++) {
+            if (indexLoop >= panjangUkuran) {
+              indexLoop = 0;
+            }
+            listInputUkuran[i].value = valueUkuran[indexLoop];
+            indexLoop++;
+          }
+        }
       }
 
       $(document).ready(function () {
